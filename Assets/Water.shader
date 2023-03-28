@@ -1,25 +1,22 @@
-Shader "Custom/Foam+Wave"
+Shader "Custom/Water"
 {
     Properties
     {
-        _MainTex("Water", 2D) = "white" {}
-        _FoamTex("Foam", 2D) = "white" {}
-        _ScrollX("Scroll X", Range(-5,5)) = 1
-        _ScrollY("Scroll Y", Range(-5,5)) = 1
+        _MainTex("Albedo (RGB)", 2D) = "white" {}
         _Tint("Colour Tint", Color) = (1,1,1,1)
         _Freq("Frequency", Range(0,5)) = 3
         _Speed("Speed", Range(0,100)) = 100
         _Amp("Amplitude", Range(0,1)) = 0.5
+
+            _Color("Color", Color) = (1,1,1,1)
+        _RampTex("Ramp Texture", 2D) = "white" {}
     }
         SubShader
         {
             CGPROGRAM
-            #pragma surface surf Lambert vertex:vert
-            float _ScrollX;
-            float _ScrollY;
-
-            sampler2D _MainTex;
-            sampler2D _FoamTex;
+            #pragma surface surf ToonRamp vertex:vert
+             
+            
 
             struct Input
             {
@@ -31,6 +28,8 @@ Shader "Custom/Foam+Wave"
             float _Freq;
             float _Speed;
             float _Amp;
+            float4 _Color;
+            sampler2D _RampTex;
 
             struct appdata {
                 float4 vertex: POSITION;
@@ -40,25 +39,39 @@ Shader "Custom/Foam+Wave"
                 float4 texcoord2: TEXCOORD2;
             };
 
+            float4 LightingToonRamp(SurfaceOutput s, fixed3 lightDir, fixed atten) {
+
+                float diff = dot(s.Normal, lightDir);
+                float h = diff * 0.5 + 0.5;
+                float2 rh = h;
+                float3 ramp = tex2D(_RampTex, rh).rgb;
+
+
+                float4 c;
+                c.rgb = s.Albedo * _LightColor0.rgb * (ramp);
+                c.a = s.Alpha;
+                return c;
+
+
+            } 
+
             void vert(inout appdata v, out Input o) {
                 UNITY_INITIALIZE_OUTPUT(Input, o);
                 float t = _Time * _Speed;
-            
                 float waveHeight = sign(sin(t + v.vertex.x * _Freq)) * _Amp + sign(sin(t * 2 + v.vertex.x * _Freq * 2) * _Amp);
+
                 v.vertex.y = v.vertex.y + waveHeight;
                 v.normal = normalize(float3(v.normal.x + waveHeight, v.normal.y, v.normal.z));
                 o.vertColor = waveHeight + 2;
             }
 
+            sampler2D _MainTex;
+
             void surf(Input IN, inout SurfaceOutput o)
             {
-                _ScrollX *= _Time;
-                _ScrollY *= _Time;
-               
-                float3 water = (tex2D(_MainTex, IN.uv_MainTex + float2(_ScrollX, _ScrollY))).rgb;
-                float3 foam = (tex2D(_FoamTex, IN.uv_MainTex + float2(_ScrollX / 2.0, _ScrollY / 2.0))).rgb;
+                // Albedo comes from a texture tinted by color
                 float4 c = tex2D(_MainTex, IN.uv_MainTex);
-                o.Albedo = (water + foam) / 2.0 * c * IN.vertColor.rgb;
+                o.Albedo = c * IN.vertColor.rgb;
             }
             ENDCG
         }
