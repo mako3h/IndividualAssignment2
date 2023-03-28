@@ -16,6 +16,6 @@
 I then added the toon shading aspect to the water. I created blue ramp texture so that I could add it in.
 
 ![ToonOnWater](https://user-images.githubusercontent.com/122996304/228308960-0d974294-7cdb-4fad-a721-ece3dc2aa7d3.PNG)
-
+![Untitled drawing (1)](https://user-images.githubusercontent.com/122996304/228309256-31f0d5cf-1e5a-4314-bffd-b2a8912e8742.png)
 
  # Part 3
