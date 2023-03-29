@@ -9,8 +9,7 @@
 
  
  Deferred rendering is a different type of rendering where the rendering of the scene gets deferred a bit. In this type of rendering, the lighting works differently therefore, shadows within the scene have no limits and the scene can hold as many lights as you want. 
- ![Deferred Rendering](https://user-images.githubusercontent.com/122996304/228629897-98859b20-d870-4399-98a3-769c79ed3bc3.png)
-
+![Deferred Rendering](https://user-images.githubusercontent.com/122996304/228630140-ce1b205d-94ac-4d4f-8469-c5c3d4c00a4a.png)
  
 
  # Part 2
