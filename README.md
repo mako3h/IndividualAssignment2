@@ -8,11 +8,10 @@
  
 ![Forward Rendering](https://user-images.githubusercontent.com/122996304/228629727-146f455e-9dd0-4878-b4a2-d4ffe1e88bda.PNG)
 
- 
+
  Deferred rendering is a different type of rendering where the rendering of the scene gets deferred a bit. In this type of rendering, the lighting works differently therefore, shadows within the scene have no limits and the scene can hold as many lights as you want. 
- 
+
 ![Deferred Rendering](https://user-images.githubusercontent.com/122996304/228630140-ce1b205d-94ac-4d4f-8469-c5c3d4c00a4a.png)
- 
 
  # Part 2
 
@@ -30,3 +29,5 @@ I then added the toon shading aspect to the water. I created blue ramp texture s
 ![Untitled drawing (1)](https://user-images.githubusercontent.com/122996304/228309256-31f0d5cf-1e5a-4314-bffd-b2a8912e8742.png)
 
  # Part 3
+
+2. What this code does is it make a photo/scene look a little blurrier. It takes a picture, makes it smaller, and copys over and over again. By doing this, after it continues to copy the picture and make it blurrier, the final product with my both blurry and smoother. h
