@@ -30,4 +30,10 @@ I then added the toon shading aspect to the water. I created blue ramp texture s
 
  # Part 3
 
-2. What this code does is it make a photo/scene look a little blurrier. It takes a picture, makes it smaller, and copys over and over again. By doing this, after it continues to copy the picture and make it blurrier, the final product with my both blurry and smoother. h
+2. What this code does is it make a photo/scene look a little blurrier. It takes a picture, makes it smaller, and copys over and over again. By doing this, after it continues to copy the picture and make it blurrier, the final product with my both blurry and smoother. 
+
+# Part 4 
+
+ I added the outlining shader to the boat. What I changed about this was instead of having a main colour for the material and then a colour for the outline itself, I made it so that there was a main texture on the material instead of the colour. Therefore you can set the material of the object and then set the colour of the outline. I added this shader to the boat within my scene so that it is able to stand out more for players. Therefore I made a wood PNG texture and then made the outline white. Here is a picture of what it looks like. 
+
+ 
