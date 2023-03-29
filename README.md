@@ -37,11 +37,16 @@ I then added the toon shading aspect to the water. I created blue ramp texture s
 
  I added the outlining shader to the boat. What I changed about this was instead of having a main colour for the material and then a colour for the outline itself, I made it so that there was a main texture on the material instead of the colour. Therefore you can set the material of the object and then set the colour of the outline. I added this shader to the boat within my scene so that it is able to stand out more for players. Therefore I made a wood PNG texture and then made the outline white. Here is a picture of what it looks like. 
 
-<<<<<<< HEAD
+![wood](https://user-images.githubusercontent.com/122996304/228679183-6b6cf4ed-b3cd-4bc0-88f1-64a5b37ecfdb.PNG)
+![woodOutlining](https://user-images.githubusercontent.com/122996304/228679209-559b6b3b-e37d-4b25-9a16-7f8b268a1393.PNG)
+![maintex](https://user-images.githubusercontent.com/122996304/228691855-3620720c-26ad-4a0d-a1c3-cb3517c8151e.PNG)
+
+
  I also added in the bloom effect that I add onto the camera. This effect changed how the scene is viewed and believe it really fit in with was i was going for throughout the scene. To make this shader different than the one that I made in the lecture, I added a "Blur" effect to it that you can change in the inspector. TO do this, I only had to create a property in the shader, define it and then within the half3 SampleBox function, times the blur effect property by it. Once I did that, I went into the c# script that I apply to the camera and declared it twice (once each in two different parts). Here are the pictures of the code that I edited. It either is zoomed in to the part that i added, or it is highlighted where I added it intot the code. 
+![blur1](https://user-images.githubusercontent.com/122996304/228691679-a2273dbc-4efd-466a-88aa-35507441d3bd.PNG)
+![blu2](https://user-images.githubusercontent.com/122996304/228691681-93260c63-43d9-4e5a-8842-be4fdc165f55.PNG)
+![blur3](https://user-images.githubusercontent.com/122996304/228691682-64a42d51-a8bc-4e63-9e5d-31f7d9af9046.PNG)
+![blur4](https://user-images.githubusercontent.com/122996304/228691683-6c3ab506-c7f0-44aa-9dbe-4e60fafd1bac.PNG)
 
-=======
 
 
- 
->>>>>>> d52f284167e83d3311995c09514f5eb753ea9cff
