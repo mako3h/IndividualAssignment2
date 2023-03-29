@@ -27,6 +27,9 @@ public class Bloom : MonoBehaviour
     [Range(0, 10)]
     public float intensity = 1;
 
+    [Range(0, 5)]
+    public float blurSize = 1;
+
     RenderTexture[] textures = new RenderTexture[16];
 
     [NonSerialized]
@@ -42,6 +45,7 @@ public class Bloom : MonoBehaviour
 
         bloom.SetFloat("_Threshold", threshold);
         bloom.SetFloat("_Intensity", Mathf.GammaToLinearSpace(intensity));
+        bloom.SetFloat("_BlurSize", blurSize);
 
         int width = source.width / 2;
         int height = source.height / 2;

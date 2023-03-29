@@ -1,7 +1,8 @@
-Shader "Alvaro/Custom/Bloom"
+Shader "Custom/Bloom"
 {
 	Properties{
 		_MainTex("Texture", 2D) = "white" {}
+	_BlurSize("Blur Size", Range(0.5, 5.0)) = 1.0
 	}
 
 		CGINCLUDE
@@ -12,6 +13,7 @@ Shader "Alvaro/Custom/Bloom"
 
 	half _Threshold;
 	half _Intensity;
+	float _BlurSize;
 
 
 	struct VertexData {
@@ -36,12 +38,12 @@ Shader "Alvaro/Custom/Bloom"
 	}
 
 	half3 SampleBox(float2 uv, float delta) {
-		float4 o = _MainTex_TexelSize.xyxy * float2(-delta, delta).xxyy;
-		half3 s =
-			Sample(uv + o.xy) + Sample(uv + o.zy) +
-			Sample(uv + o.xw) + Sample(uv + o.zw);
-		return s * 0.25f;
-	}
+    float4 o = _MainTex_TexelSize.xyxy * float2(-delta, delta).xxyy * _BlurSize;
+    half3 s =
+        Sample(uv + o.xy) + Sample(uv + o.zy) +
+        Sample(uv + o.xw) + Sample(uv + o.zw);
+    return s * 0.25f;
+}
 
 	half3 Prefilter(half3 c) {
 		half brightness = max(c.r, max(c.g, c.b));

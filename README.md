@@ -4,12 +4,12 @@
  # Part 1
  Forward rendering and deferred rendering are two different types of rendering 3D objects within a scene. 
  
- Forward rendering is a type of 3D rendering that renders one object at a time where it starts at the cameras perspective and then gradually moves into the scene rendering object by object (one at a time). Therefore it is good when rendering small amounts of objects instead of large amounts in a large scene. 
+ This type of rendering is the basic/normal form of rendering. Forward rendering is a type of 3D rendering that renders one object at a time where it starts at the cameras perspective and then gradually moves into the scene rendering object by object (one at a time). Therefore it is good when rendering small amounts of objects instead of large amounts in a large scene. 
  
 ![Forward Rendering](https://user-images.githubusercontent.com/122996304/228629727-146f455e-9dd0-4878-b4a2-d4ffe1e88bda.PNG)
 
 
- Deferred rendering is a different type of rendering where the rendering of the scene gets deferred a bit. In this type of rendering, the lighting works differently therefore, shadows within the scene have no limits and the scene can hold as many lights as you want. 
+ Deferred rendering is a different type of rendering where the rendering of the scene gets deferred a bit. The geometry is passed down the pipeline and then the lighting calculations are done. In this type of rendering, the lighting works differently therefore, shadows within the scene have no limits and the scene can hold as many lights as you want. 
 
 ![Deferred Rendering](https://user-images.githubusercontent.com/122996304/228630140-ce1b205d-94ac-4d4f-8469-c5c3d4c00a4a.png)
 
@@ -31,9 +31,11 @@ I then added the toon shading aspect to the water. I created blue ramp texture s
  # Part 3
 
 2. What this code does is it make a photo/scene look a little blurrier. It takes a picture, makes it smaller, and copys over and over again. By doing this, after it continues to copy the picture and make it blurrier, the final product with my both blurry and smoother. 
+3. This could be used in a shooting style game when after a player gets hit with a flashbang, then they are unable to hear and as well, their vision is deferred a bit making it blurry as the player should not be able to see greatly. 
 
 # Part 4 
 
  I added the outlining shader to the boat. What I changed about this was instead of having a main colour for the material and then a colour for the outline itself, I made it so that there was a main texture on the material instead of the colour. Therefore you can set the material of the object and then set the colour of the outline. I added this shader to the boat within my scene so that it is able to stand out more for players. Therefore I made a wood PNG texture and then made the outline white. Here is a picture of what it looks like. 
 
- 
+ I also added in the bloom effect that I add onto the camera. This effect changed how the scene is viewed and believe it really fit in with was i was going for throughout the scene. To make this shader different than the one that I made in the lecture, I added a "Blur" effect to it that you can change in the inspector. TO do this, I only had to create a property in the shader, define it and then within the half3 SampleBox function, times the blur effect property by it. Once I did that, I went into the c# script that I apply to the camera and declared it twice (once each in two different parts). Here are the pictures of the code that I edited. It either is zoomed in to the part that i added, or it is highlighted where I added it intot the code. 
+
