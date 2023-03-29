@@ -5,10 +5,12 @@
  Forward rendering and deferred rendering are two different types of rendering 3D objects within a scene. 
  
  Forward rendering is a type of 3D rendering that renders one object at a time where it starts at the cameras perspective and then gradually moves into the scene rendering object by object (one at a time). Therefore it is good when rendering small amounts of objects instead of large amounts in a large scene. 
+ 
 ![Forward Rendering](https://user-images.githubusercontent.com/122996304/228629727-146f455e-9dd0-4878-b4a2-d4ffe1e88bda.PNG)
 
  
  Deferred rendering is a different type of rendering where the rendering of the scene gets deferred a bit. In this type of rendering, the lighting works differently therefore, shadows within the scene have no limits and the scene can hold as many lights as you want. 
+ 
 ![Deferred Rendering](https://user-images.githubusercontent.com/122996304/228630140-ce1b205d-94ac-4d4f-8469-c5c3d4c00a4a.png)
  
 
