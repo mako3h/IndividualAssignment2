@@ -35,5 +35,9 @@ I then added the toon shading aspect to the water. I created blue ramp texture s
 # Part 4 
 
  I added the outlining shader to the boat. What I changed about this was instead of having a main colour for the material and then a colour for the outline itself, I made it so that there was a main texture on the material instead of the colour. Therefore you can set the material of the object and then set the colour of the outline. I added this shader to the boat within my scene so that it is able to stand out more for players. Therefore I made a wood PNG texture and then made the outline white. Here is a picture of what it looks like. 
+![wood](https://user-images.githubusercontent.com/122996304/228679183-6b6cf4ed-b3cd-4bc0-88f1-64a5b37ecfdb.PNG)
+![woodOutlining](https://user-images.githubusercontent.com/122996304/228679209-559b6b3b-e37d-4b25-9a16-7f8b268a1393.PNG)
+
+
 
  
