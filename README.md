@@ -30,6 +30,18 @@ I then added the toon shading aspect to the water. I created blue ramp texture s
 
  # Part 3
 
+1. a) Within this code below, it creates some variables and also it creates an array of RenderTextures
+
+
+    b) Within this code below, it edits and adjusts the photo, making its very own sort of temporary photo that has these things applied to it. 
+
+
+    c) Within this code below, both of these do the same thing. It repeats a certain effect to a photo and then stores it in that "temporary photo". Then it makes currentDestination the new currentSource so that it can be repeated again and again. THe loop depends on the iterations variable. 
+
+    d) Within this code below, it is where the Graphics.Blit is applied to the code as well.
+
+
+
 2. What this code does is it make a photo/scene look a little blurrier. It takes a picture, makes it smaller, and copys over and over again. By doing this, after it continues to copy the picture and make it blurrier, the final product with my both blurry and smoother. 
 3. This could be used in a shooting style game when after a player gets hit with a flashbang, then they are unable to hear and as well, their vision is deferred a bit making it blurry as the player should not be able to see greatly. 
 
