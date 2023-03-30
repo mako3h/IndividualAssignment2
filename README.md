@@ -97,6 +97,29 @@ Therefore any shadows that will be emitted onto this plane will have a lined sha
 3. There are many places that this shader can be applied into a game. For example, if you are created a game that has a lot of toon shading and you would like to have shadows pertray this same concept, it is smart to use this effect to have your shadows look "toonish". This type of shadow shading can be used in many scenes to enhance the environement and make it more intriging and interesting for the player. Simple addtions to an environment like this goes a long way and most players do not even realize it as it can fit in with the scene so nicely. I would personally use this type of shadow shader in an environment that holds lots of shadows so that it is not completely dark and it would really enhance that scene.
 
 
+# Part 7 (Self-Evaluation)
+
+For this part, I will be giving myself a score from 1 out of 5 on each part and then justify the reasoning behind it 
+
+Part 1 - 3/5
+I worked hard on this part but after looking more at the difference between these two methods of rendering, I quickly realized that it is something I will be looking at more during my final exam review study time. I gave myself this mark because I feel like I have properly shown that I understand majority of this aspect but there is still room for learning and room to better my understand of these methods. 
+
+Part 2 - 4/5
+The reason I gave myself a 4 on part 2 is that I feel like I created good square like waves in the scene. I do wish that I could have made them more distinct but in the end, I think that i proved that I attempted to do this even if it still doesn't look like it in the scene. I have the proper understanding of how the sin function works and by using 1's and -1's, I tried using sign, normalize and more to achieve my goal. I created a toon shading to the waves and they actually look quite good as when the waves get deeper, the darker it will get (by making my own blue ramp texture).
+
+Part 3 - 4/5
+I really understood this shader as this is a motion blur like shader that will affect how the players vision works within the game. I never been the best at explaining shaders as a lot of the time, I do not understand the proper approach that I should take when explaning. I think I did a good job here of proving I knew what I was talking about, but I know that there is always room for improvment, especially for something like this where I know I can get better at in general. 
+
+Part 4 - 5/5 
+I am not normally one to give myself a 5/5 on something, even if it is one part in this project, but I believe that I completely showed my understanding here. Not only did I take two shaders that we learned and edited them so that they are different, but I also explained how they work and what I did to them in order to accomplish this. I provided loads of screenshots with highlights within them to fully show that I understand not only how they work but how to edit them to make something cool I haven't even made before. 
+
+Part 5 - 3.5/5
+I feel like I did a decently good job here but looking back, I think I could have maybe explained more. I just feel like this part did not have lots of potenial spots for explanation. Since the shader was quite straight forward and was easy to understand, I think I did a good job at explaining it and where it could used but when I compare the part 3, I did not explain a lot (I feel like the more I explain the more it shows you I understand it)
+
+Part 6 - 4.5/5
+I believe that I did a great job in this part, whether is be me explaining how this shader works, showing how effective it can be in a scene, creating a flowchart of the shader, and also explaining where this can be added in a game. I haven't really made too many flowcharts before so I am really hoping I did a great job at that but since I didn't entirely know if I did it correct, I just tried to explain the shader to the best of my ability. Since we made this in the tutorial, and it was my job to actually ensure that these shadow lines worked properly, I feel like I was able to grasp a better understanding due to it. 
+
+Overall, I think I understand my strengths (editing shaders to add things to them, creating an ideal scene, having an organzied readMe with lots of explanations in them) and my weaknesses (Concepts like the deferred/forward rendering, fully explaining shaders code, and how to make charts) now. I believe that I properly understand what I need to study for and work on to ensure that I can maximize my mark for the final exam. :)
 
 
 
