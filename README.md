@@ -1,4 +1,4 @@
-# IndividualAssignment2
+# Individual Assignment 2
  
 
  # Part 1
