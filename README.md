@@ -34,15 +34,15 @@ I then added the toon shading aspect to the water. I created blue ramp texture s
 
 ![a](https://user-images.githubusercontent.com/122996304/228696194-bfce2958-dd60-4aea-a906-f0860ae259f5.PNG)
 
-    b) Within this code below, it edits and adjusts the photo, making its very own sort of temporary photo that has these things applied to it. 
+   b) Within this code below, it edits and adjusts the photo, making its very own sort of temporary photo that has these things applied to it. 
     
 ![b](https://user-images.githubusercontent.com/122996304/228696258-39e24047-bb46-48f7-b663-1919c68eedb6.PNG)
 
-    c) Within this code below, both of these do the same thing. It repeats a certain effect to a photo and then stores it in that "temporary photo". Then it makes currentDestination the new currentSource so that it can be repeated again and again. THe loop depends on the iterations variable. 
+   c) Within this code below, both of these do the same thing. It repeats a certain effect to a photo and then stores it in that "temporary photo". Then it makes currentDestination the new currentSource so that it can be repeated again and again. THe loop depends on the iterations variable. 
     
 ![c](https://user-images.githubusercontent.com/122996304/228696221-4f4d54f5-e08c-4fc2-8e11-47359b9b6c8f.PNG)
 
-    d) Within this code below, it is where the Graphics.Blit is applied to the code as well.
+   d) Within this code below, it is where the Graphics.Blit is applied to the code as well.
     
 ![d](https://user-images.githubusercontent.com/122996304/228696212-348663a3-55e6-4e67-98b0-13f551d619c7.PNG)
 
