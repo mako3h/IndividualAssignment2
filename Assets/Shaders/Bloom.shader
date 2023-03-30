@@ -44,6 +44,7 @@ Shader "Custom/Bloom"
         Sample(uv + o.xw) + Sample(uv + o.zw);
     return s * 0.25f;
 }
+	
 
 	half3 Prefilter(half3 c) {
 		half brightness = max(c.r, max(c.g, c.b));

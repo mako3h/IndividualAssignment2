@@ -78,3 +78,9 @@ I then added the toon shading aspect to the water. I created blue ramp texture s
 
 3. I feel like this coloured shadows shader would be great if it was applied to certain environements within games. Coloured shadows could both really help the scene look better appealing and even help navigate the player throughout the scene.
 
+# Part 6
+
+1. This shader works by applying shadows (not any shadows) to a plane of some sort. It takes a main texture that the plane has, and then any other texture that you would like to be the shadow. In this part of code below, it is made to transparent out any white that is within that shader texture, therefore if there are black lines (with a white background) in that texture, there will only be the black lines in the scene. I originally made this function an if statement, saying if the colour - black, then make it transparent, but after using lerp, this is what it looks like now. 
+
+
+Therefore any shadows that will be emitted onto this plane will have a lined shadow effect onto it like what it looks like below in my scene. 

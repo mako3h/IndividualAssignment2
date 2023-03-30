@@ -1297,7 +1297,7 @@ MonoBehaviour:
   iterations: 16
   threshold: 1
   intensity: 1
-  blurSize: 2
+  blurSize: 0
 --- !u!1 &980993397
 GameObject:
   m_ObjectHideFlags: 0
