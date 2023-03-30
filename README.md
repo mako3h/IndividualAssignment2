@@ -87,3 +87,9 @@ I then added the toon shading aspect to the water. I created blue ramp texture s
 Therefore any shadows that will be emitted onto this plane will have a lined shadow effect onto it like what it looks like below in my scene. 
 ![shadowLines](https://user-images.githubusercontent.com/122996304/228700700-96c126e4-dd60-460f-9947-4594bf7a1705.PNG)
 
+2. Flowchart Below
+![flowchart shadow shader](https://user-images.githubusercontent.com/122996304/228710869-d6cb3528-d248-4926-9eb1-feb8c3205af5.png)
+
+
+
+
