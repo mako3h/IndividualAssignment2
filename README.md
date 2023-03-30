@@ -13,6 +13,10 @@
 
 ![Deferred Rendering](https://user-images.githubusercontent.com/122996304/228630140-ce1b205d-94ac-4d4f-8469-c5c3d4c00a4a.png)
 
+
+As you can see, these two types of rendering are different as they use the lighting differently. In the forward rendering method, the lighting is just calculated within the fragment shader but when you look at how the pipeline works in the deferred rendering, you will see that the lighting that would have been calculated within the fragment shader is taken out, and gets added in after the fragment shader as it gets added into the pipeline with the depth, normals and the colour. 
+
+
  # Part 2
 
  For re-creating the scene in unity, I began by creating a water shader (Editing the one from the lecture) so that the sin wave works a little differently. Instead of it being smooth or a sharp triangle wave, I made it so that it was more boxed out and squared by modifying the vert function. This sader was implemented by adding it to the bottom plane within the scene. This created the moving/box shaped water effect you will see when the game is running. To make this workable, in the vert function, there is a line that looks like this -> float waveHeight = sin(t + v.vertex.x * _Freq) * _Amp + sin(t * 2 + v.vertex.x * _Freq * 2) * _Amp;, and so I edited this line to use a normalize function that looks like this -> float waveHeight = normalize(sin(t + v.vertex.x * _Freq)) * _Amp + normalize(sin(t * 2 + v.vertex.x * _Freq * 2) * _Amp);. By adding this mathimatical function to this line, it will create more of an up and down look in the waves. By doing this, it will create the box shaped waves look. This look of the waves is the best that I was able to accomplish, as I attempted multiple ways to make the waves bigger but they all resulted in this look. I believe that they still give off that box shaped wave look, but I wish I could have made it more noticable. I feel like above where I mentioned how I added the normalize function, it should have completed what I was hoping to achieve but it still did not therefore I feel like this would be the best that I will be able to accomplish. 
@@ -89,6 +93,8 @@ Therefore any shadows that will be emitted onto this plane will have a lined sha
 
 2. Flowchart Below
 ![flowchart shadow shader (1)](https://user-images.githubusercontent.com/122996304/228711009-e275be41-3c79-4abb-b1bf-1d71f3a4f5b7.png)
+
+3. There are many places that this shader can be applied into a game. For example, if you are created a game that has a lot of toon shading and you would like to have shadows pertray this same concept, it is smart to use this effect to have your shadows look "toonish". This type of shadow shading can be used in many scenes to enhance the environement and make it more intriging and interesting for the player. Simple addtions to an environment like this goes a long way and most players do not even realize it as it can fit in with the scene so nicely. I would personally use this type of shadow shader in an environment that holds lots of shadows so that it is not completely dark and it would really enhance that scene.
 
 
 
