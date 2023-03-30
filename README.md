@@ -60,6 +60,8 @@ I then added the toon shading aspect to the water. I created blue ramp texture s
 ![blu2](https://user-images.githubusercontent.com/122996304/228691681-93260c63-43d9-4e5a-8842-be4fdc165f55.PNG)
 ![blur3](https://user-images.githubusercontent.com/122996304/228691682-64a42d51-a8bc-4e63-9e5d-31f7d9af9046.PNG)
 ![blur4](https://user-images.githubusercontent.com/122996304/228691683-6c3ab506-c7f0-44aa-9dbe-4e60fafd1bac.PNG)
+![blur](https://user-images.githubusercontent.com/122996304/228692304-2ca27bb4-1c96-4e25-af27-8c3d9175dd9a.PNG)
+![blur5](https://user-images.githubusercontent.com/122996304/228692307-dd4da1ff-478d-4691-9d19-3e557e48cf96.PNG)
 
 
 
