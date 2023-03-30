@@ -81,6 +81,9 @@ I then added the toon shading aspect to the water. I created blue ramp texture s
 # Part 6
 
 1. This shader works by applying shadows (not any shadows) to a plane of some sort. It takes a main texture that the plane has, and then any other texture that you would like to be the shadow. In this part of code below, it is made to transparent out any white that is within that shader texture, therefore if there are black lines (with a white background) in that texture, there will only be the black lines in the scene. I originally made this function an if statement, saying if the colour - black, then make it transparent, but after using lerp, this is what it looks like now. 
+![shad1](https://user-images.githubusercontent.com/122996304/228700680-9ffe77d0-b8f5-4554-96ec-3a6bc8006ee3.PNG)
 
 
 Therefore any shadows that will be emitted onto this plane will have a lined shadow effect onto it like what it looks like below in my scene. 
+![shadowLines](https://user-images.githubusercontent.com/122996304/228700700-96c126e4-dd60-460f-9947-4594bf7a1705.PNG)
+
