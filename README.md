@@ -69,5 +69,9 @@ I then added the toon shading aspect to the water. I created blue ramp texture s
 ![blur](https://user-images.githubusercontent.com/122996304/228692304-2ca27bb4-1c96-4e25-af27-8c3d9175dd9a.PNG)
 ![blur5](https://user-images.githubusercontent.com/122996304/228692307-dd4da1ff-478d-4691-9d19-3e557e48cf96.PNG)
 
+# Part 5
 
+1 & 2. First off this part of the code calls the LightingCSLambert which calculates the colour of the object using 3 inputs (SurfaceOutput, lightDir, and atten). Then the functions calculates the final colour of the object, and then it adds in the colour of the shadows by multipling it by 1.0 - atten. Finally, it returns a half4 which contains the final colour of the object. 
+
+3. I feel like this coloured shadows shader would be great if it was applied to certain environements within games. Coloured shadows could both really help the scene look better appealing and even help navigate the player throughout the scene.
 
