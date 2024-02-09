@@ -1294,10 +1294,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloomShader: {fileID: 4800000, guid: e8f48b295aabb964b90a5d21f65d4d09, type: 3}
   debug: 0
-  iterations: 5
-  threshold: 1
-  intensity: 1
-  blurSize: 2.12
+  iterations: 6
+  threshold: 0.68
+  intensity: 0.79
+  blurSize: 1.96
 --- !u!1 &980993397
 GameObject:
   m_ObjectHideFlags: 0
